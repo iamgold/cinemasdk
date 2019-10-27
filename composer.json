@@ -1,7 +1,11 @@
 {
-    "name": "iamgold/cinema",
+    "name": "iamgold/cinemasdk",
     "description": "This is a SDK for CENEMA, but it's not an official SDK",
     "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "rmccue/requests": "^1.7"
+    },
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -9,11 +13,5 @@
             "email": "iamgold0105@gmail.com"
         }
     ],
-    "require": {
-        "php": ">=7.0.0",
-        "rmccue/requests": "^1.7"
-    },
-    "autoload": {
-        "psr-4": {"iamgold\\cinema\\": "src/"}
-    }
+    "minimum-stability": "dev"
 }
