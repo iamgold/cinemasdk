@@ -6,7 +6,7 @@
         "php": ">=7.0",
         "rmccue/requests": "^1.7"
     },
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "Eric Huang",
