@@ -49,9 +49,12 @@ class BaseObject
             $headers = ['Cookie' => $sessId];
 
         $qs = $args[0] ?? null;
-        $requestUri = sprintf('http://%s/%s?method=%s', Cinema::$host, $path, $name);
-        if (isset($args[0]) && !empty($args[0]))
-            $requestUri .= '&' . http_build_query($args[0]);
+        $requestUri = sprintf('http://%s/%s', Cinema::$host, $path);
+        if (isset($args[0]) && !empty($args[0])) {
+            $params = $args[0];
+            $params['method'] = $name;
+            $requestUri .= '?' . http_build_query($params);
+        }
 
         $res = Requests::get($requestUri, $headers);
         return $res;
