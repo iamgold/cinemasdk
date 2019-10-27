@@ -16,5 +16,5 @@
     "autoload": {
         "psr-4": {"cinemasdk\\": "src/"}
     },
-    "minimum-stability": "release"
+    "minimum-stability": "stable"
 }
