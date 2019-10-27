@@ -44,7 +44,10 @@ class BaseObject
         if (Cinema::$env !== 'prod')
             $path = 'copy/' . $path;
 
-        $headers = ['Cookie' => $sessId];
+        $headers = [];
+        if (!empty($sessId))
+            $headers = ['Cookie' => $sessId];
+
         $qs = $args[0] ?? null;
         $requestUri = sprintf('http://%s/%s?method=%s', Cinema::$host, $path, $name);
         if (isset($args[0]) && !empty($args[0]))
