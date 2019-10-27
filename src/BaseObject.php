@@ -1,6 +1,6 @@
 <?php
 
-namespace iamgold\cinema;
+namespace cinemasdk;
 
 use Requests;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace iamgold\cinema;
+namespace cinemasdk;
 
 /**
  * This class is used to access order API.

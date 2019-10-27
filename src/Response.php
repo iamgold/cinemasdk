@@ -1,6 +1,6 @@
 <?php
 
-namespace iamgold\cinema;
+namespace cinemasdk;
 
 use Exception;
 use Requests_Response;

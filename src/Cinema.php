@@ -1,6 +1,6 @@
 <?php
 
-namespace iamgold\cinema;
+namespace cinemasdk;
 
 /**
  * This class is used to store all basic config for Cinema API.
